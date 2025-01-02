@@ -1,0 +1,94 @@
+.block_1s{
+/* border: 2px solid wheat; */
+min-height: 250px;
+}
+.block_1s h1 span{
+    background: -webkit-linear-gradient(#4882f6,#E85C5D) ;
+    -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+}
+.block_1s h1{
+    color: #575757;
+    text-wrap-style: balance;
+}
+
+.block_2s{
+    display: grid;
+    grid-template-columns: repeat(4,minmax(180px,1fr));
+    grid-auto-flow: row;
+    gap: 16px;
+ 
+}
+
+
+.card{
+    /* border:white 2px dotted; */
+    height: 180px;
+    width: 200px;
+}
+.card:hover{
+    @apply bg-slate-700 duration-100 ease-linear
+}
+
+
+.messageBox {
+    width: fit-content;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2d2d2d;
+    padding: 0 15px;
+    border-radius: 10px;
+    border: 1px solid rgb(63, 63, 63);
+  }
+  .messageBox:focus-within {
+    border: 1px solid rgb(110, 110, 110);
+  }
+  
+  
+  
+  
+  .messageBox{
+    border-radius: 50px;
+  }
+  #messageInput {
+    min-width: 56vw;
+
+    height: 100%;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    padding-left: 10px;
+    color: white;
+  }
+  #messageInput:focus ~ #sendButton svg path,
+  #messageInput:valid ~ #sendButton svg path {
+    fill: #3c3c3c;
+    stroke: white;
+  }
+  
+  #sendButton {
+    width: fit-content;
+    height: 100%;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  #sendButton svg {
+    height: 18px;
+    transition: all 0.3s;
+  }
+  #sendButton svg path {
+    transition: all 0.3s;
+  }
+  #sendButton:hover svg path {
+    fill: #3c3c3c;
+    /* stroke: white; */
+  }
+  

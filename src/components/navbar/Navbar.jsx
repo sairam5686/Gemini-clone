@@ -4,7 +4,7 @@ import './Navbar.css'
 
 const Navbar = () => {
   return (
-    <div className='flex justify-between items-center flex-wrap p-5 border-b-orange-300 border-b-2'>
+    <div className='flex justify-between items-center flex-wrap p-5 '>
       <div className="block_1 ">
         <h2 className='text-2xl font-semibold'>Gemini</h2>
       </div>
