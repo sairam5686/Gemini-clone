@@ -159,7 +159,7 @@ const Imp = () => {
 
 
 
-      <div className="block_3s mt-20"> 
+      <div className="block_3s mt-20 mb-10"> 
 
           <div className="messageBox">
             <input  placeholder="Enter a prompt here ..." value={Request} onChange={(e)=>{setRequest(e.target.value); }}  type="text" id="messageInput" />

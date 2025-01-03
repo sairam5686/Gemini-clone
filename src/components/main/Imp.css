@@ -13,9 +13,9 @@ min-height: 250px;
 }
 
 .block_2s{
-    display: grid;
-    grid-template-columns: repeat(4,minmax(180px,1fr));
-    grid-auto-flow: row;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 16px;
  
 }

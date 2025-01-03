@@ -22,7 +22,7 @@ const Api = ({children}) => {
         if (i==0 || i%2 !==1) {
           new_res +=res_arr[i];
         }else{
-          new_res += "<b>"+res_arr[i]+"</b>";   
+          new_res += "<b className ='text-2xl' >"+res_arr[i]+"</b>";   
             }
       }
       let new2_res = new_res.split("*").join("</br>");

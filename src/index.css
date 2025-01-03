@@ -15,7 +15,7 @@ html,body{
 
 .super_parent_container{
     background-color: #1E1F20;
-    height: 100vh;
+    min-height: 100vh;
     width: 100vw;
     color: #E3E5E4;
 }
