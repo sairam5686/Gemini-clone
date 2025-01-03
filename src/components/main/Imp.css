@@ -106,5 +106,6 @@ min-height: 250px;
     display: flex;
     justify-content: center;
    padding-top: 2%;
-   font-size: 20px;
+   font-size: 16px;
+   color: rgb(202, 194, 194);
   }
