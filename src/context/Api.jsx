@@ -16,8 +16,18 @@ const Api = ({children}) => {
       setSkeleton(true);
       setPressed(true);
       const responsee =  await run(prompt);
+      let res_arr = responsee.split("**");
+      let new_res="";
+      for (let i = 0; i < res_arr.length; i++) {
+        if (i==0 || i%2 !==1) {
+          new_res +=res_arr[i];
+        }else{
+          new_res += "<b>"+res_arr[i]+"</b>";   
+            }
+      }
+      let new2_res = new_res.split("*").join("</br>");
       setSkeleton(false);
-      setResponse(responsee);
+      setResponse(new2_res);
     }
 
 

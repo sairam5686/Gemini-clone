@@ -111,7 +111,7 @@ const Imp = () => {
         <>
         <div className='result'>
          <div className='resultbox'>
-          <p >{response}</p>
+          <p dangerouslySetInnerHTML={{__html:response}}></p>
         </div>
         </div>
         
